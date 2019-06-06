@@ -1,0 +1,91 @@
+@font-face{
+    font-family: 'Pacifico';
+    src: url(../font/Pacifico.ttf);
+}
+/* font-family: 'Pacifico', cursive; */
+body {
+    font-family: "Roboto", sans-serif;
+    }
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: rgb(240, 240, 240);
+}
+
+nav {
+    background-color: rgba(0, 128, 128, 0.8);
+}
+.nav-link {
+    font-size: 20px;
+    margin-left: 15px;
+    width: 80px;
+    position: relative;
+}
+
+.nav-link:hover:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    animation: linija 0.3s ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes linija {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+  }
+
+footer {
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px; 
+}
+    
+.glavninaslov {
+    text-align: center;
+    max-width: 670px;
+    margin: 0px auto 75px; 
+}
+.glavninaslov h2 {
+    font-size: 36px;
+    color: #222222;
+    margin-bottom: 15px;
+    text-transform: uppercase; 
+}
+.glavninaslov p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    margin-bottom: 0px; 
+}
+       
+.galerija {
+    margin-top: 45px; 
+}
+        
+.deogalerije {
+    display: inline-block;
+    margin-bottom: 45px; 
+}
+.deogalerije .slika {
+    text-align: center;
+    border-radius: 5px; 
+}
+.deogalerije .text {
+    text-align: center; 
+}
+.deogalerije .text h4 {
+    color: #222222;
+    font-size: 21px;
+    margin-top: 22px;
+   }
+
+.deogalerije .text h4:hover {
+    color: #766dff; 
+}

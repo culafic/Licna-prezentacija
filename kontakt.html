@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kontakt</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Marija Ćulafić">
+    <meta name="description" content="Lična prezentacija">
+    <meta name="keywords" content="HTML,CSS, programiranje, prezentacija">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+</head>
+
+<body>
+    <!-- navigacioni bar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+        <div class="d-flex flex-grow1">
+            <span class="w-100 d-lg-none d-block"></span>
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html" style="font-size:30px">Marija</a>
+
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow1 text-right" id="mynavbar">
+
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="omeni.html">O meni</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projekti.html">Projekat</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class='omotac'>
+        <h4>Vaši utisci</h4>
+        <form>
+
+            <div class="form-group">
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" class="form-control form-control-sm" name="ime" id="ime">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail adresa*:</label>
+                <input type="email" class="form-control form-control-sm" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="sajt">Vaš sajt:</label>
+                <input type="url" placeholder="http://" class="form-control form-control-sm" name="sajt" id="sajt">
+            </div>
+            <div class="form-group">
+                <label for="komentar">Komentar</label>
+                <textarea name="tekst" id="tekst" rows="3" class="form-control form-control-sm" name="komentar"
+                    id="komentar"></textarea>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-5">
+                    <button type="button" class="btn form-control">
+                        Pošalji</button>
+                </div>
+                <div class="col-md-5 offset-md-2">
+                    <button type="button" class="btn form-control">
+                        Obriši</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+        Copyright &copy;2019 Marija Ćulafić
+    </footer>
+
+</body>
+
+</html>

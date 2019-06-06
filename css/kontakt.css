@@ -1,0 +1,84 @@
+@font-face{
+    font-family: 'Pacifico';
+    src: url(../font/Pacifico.ttf);
+}
+/* font-family: 'Pacifico', cursive; */
+* {
+	box-sizing: border-box;
+}
+body {
+    background-image: url(../slike/flowers.jpg);   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    color: #222222;
+    }
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: rgb(240, 240, 240);
+}
+
+nav {
+    background-color: rgba(0, 128, 128, 0.8);
+}
+.nav-link {
+    font-size: 20px;
+    margin-left: 15px;
+    width: 80px;
+    position: relative;
+}
+
+.nav-link:hover:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    animation: linija 0.3s ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes linija {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+  }
+
+footer {
+    width: 100%;
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+.omotac {
+    width: 40%;
+    height: 500px;
+    margin: 250px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+}
+.omotac h4 {
+    text-align: center;
+}
+.row {
+    text-align: center;
+    margin-top: 20px;
+ }   
+[type="button"] {       
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(to right, teal 0%, #86e8ff 48%, teal 100%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    }
+
+input:focus {
+    -ms-transform: scaleY(1); /* IE 9 */
+    -webkit-transform: scaleY(1); /* Safari 3-8 */
+    transform: scaleY(1.2);
+}

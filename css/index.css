@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'Pacifico';
+    src: url(../font/Pacifico.ttf);
+}
+/* font-family: 'Pacifico', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {   
+    background-image: url(../slike/flowers.jpg);   
+    background-position: center;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: rgb(240, 240, 240);
+}
+
+nav {
+    background-color: rgba(0, 128, 128, 0.8);
+}
+
+.nav-link {
+    font-size: 20px;
+    margin-left: 15px;
+    width: 80px;
+    position: relative;
+}
+
+.nav-link:hover:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    animation: linija 0.3s ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes linija {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+  }
+
+.naslov{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:12px 24px;
+    border:2px solid #ccc;
+    letter-spacing:4px;
+    text-align: center;
+    color:#f1f1f1;
+    font-family: "Roboto", sans-serif;
+}
+    
+  
+

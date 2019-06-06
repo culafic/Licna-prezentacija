@@ -1,0 +1,96 @@
+@font-face{
+    font-family: 'Pacifico';
+    src: url(../font/Pacifico.ttf);
+}
+/* font-family: 'Pacifico', cursive; */
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+body {
+    background-image: url(../slike/flowers.jpg);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    color: #222222;
+}
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: rgb(240, 240, 240);
+}
+
+nav {
+    background-color: rgba(0, 128, 128, 0.8);
+}
+.nav-link {
+    font-size: 20px;
+    margin-left: 15px;
+    width: 80px;
+    position: relative;
+}
+
+.nav-link:hover:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    animation: linija 0.3s ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes linija {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+  }
+.omotac {
+    padding: 120px 40px 100px;
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+
+#leva, #desna{
+    padding: 15px;
+    margin-top: 0;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    background-color:#f1f1f1;
+    width: 48%;
+    margin-right: 20px;
+}
+
+#leva h2 {
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    color: #645b5b;
+    text-align: center;
+}
+
+#desna img {
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: justify;
+}
+
+h2 i, p i, h6 i, h5 i {
+    margin-right:16px;
+    font-size: 18px;
+    color:teal;
+}
+
+.podaci{
+    padding:0 16px;
+}
+
+footer {
+    background-color: teal;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
